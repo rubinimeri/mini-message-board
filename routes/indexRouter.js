@@ -5,7 +5,7 @@ const indexRouter = Router();
 
 indexRouter.get("/", indexController.getAllMessages);
 indexRouter.get("/new", indexController.getForm);
+indexRouter.post("/new", indexController.insertUserPost);
 indexRouter.get("/:messageId", indexController.getUser);
-indexRouter.post("/new", indexController.insertUserPost)
 
 module.exports = indexRouter;
