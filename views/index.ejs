@@ -9,9 +9,9 @@
     <h1><%= title %></h1>
     <% for (let i = 0; i < messages.length; i++) { %>
         <div class="message">
-            <h3><%= messages[i].user %></h3>
-            <p><%= messages[i].text %></p>
-            <a href="/<%= messages[i].user %>">Open</a>
+            <h3><%= messages[i].username %></h3>
+            <p><%= messages[i].message %></p>
+            <a href="/<%= messages[i].id %>">Open</a>
         </div>
     <% } %>
     <a href="/new">Add message</a>
